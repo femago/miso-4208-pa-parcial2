@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">LaiCare</string>
+    <string name="no_pet_available">No pets.\nPress + button below to add one.
+    </string>
+    <string name="activity_mypets">My pets</string>
+    <string name="add_pet">Add pet</string>
+    <string name="edit_pet">Edit pet</string>
+    <string name="species">Species</string>
+    <string name="DOG">Dog</string>
+    <string name="CAT">Cat</string>
+    <string name="name">Name</string>
+    <string name="date_of_birthday">Date of birthday</string>
+    <string name="empty_field">Missing or invalid fields.</string>
+    <plurals name="years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="info">Info</string>
+    <string name="treatments">Treatments</string>
+    <string name="delete">Delete</string>
+    <string name="period">Frequency (days)</string>
+    <string name="term">Duration (days)</string>
+    <string name="no_treatment_available">No treatments.\nPress + button below to add one.</string>
+    <string name="places">Place</string>
+    <string name="HOME">Home</string>
+    <string name="VET">Vet</string>
+    <string name="TRAINING">Training center</string>
+    <string name="OTHERS">Others</string>
+    <string name="dogs">Dogs</string>
+    <string name="cats">Cats</string>
+    <string name="any">Any</string>
+    <string name="add_treatment">Add treatment</string>
+    <string name="edit_treatment">Edit treatment</string>
+    <string name="deleted">deleted</string>
+    <string name="added">added</string>
+    <string name="appointments_tab">APPOINTMENTS</string>
+    <string name="monitoring_tab">MONITORING</string>
+    <plurals name="grams">
+        <item quantity="one">%d gram</item>
+        <item quantity="other">%d grams</item>
+    </plurals>
+    <string name="grams">Grams</string>
+    <string name="date">Date</string>
+    <string name="add_checkpoint">Add checkpoint</string>
+    <string name="edit_checkpoint">Edit checkpoint</string>
+    <string name="checkpoint_added">Checkpoint added</string>
+    <string name="checkpoint_deleted">Checkpoint deleted</string>
+    <string name="quadrivalent_vaccine">Quadrivalent vaccine</string>
+    <string name="rabies_vaccine">Rabies vaccine</string>
+    <string name="deworming">Deworming</string>
+    <string name="add_appointment">Add appointment</string>
+    <string name="edit_appointment">Edit appointment</string>
+    <string name="no_treatments">No treatments for this kind of pet.</string>
+    <string name="treatment">Treatment</string>
+    <string name="first_day">First day</string>
+    <string name="appointment_added">Appointment added</string>
+    <string name="appointment_deleted">Appointment deleted</string>
+    <string name="no_appointment_available">No appointments.\nPress + button below to add one.</string>
+    <string name="no_checkpoint_available">No checkpoints.\nPress + button below to add one.</string>
+    <string name="mark_as_attended">Mark appointment as attended today?</string>
+    <string name="attended">Last time attended</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_summary">Notify when an appointment needs attention</string>
+    <string name="about">About</string>
+    <string name="about_message" translatable="false">b1918fd3996b4ad6a43109b7ae8753fd</string>
+</resources>
