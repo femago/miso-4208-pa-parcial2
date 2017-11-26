@@ -9,17 +9,11 @@
         android:theme="@style/laicare_base"
         android:supportsRtl="false"
         >
-        <activity android:name=".view.PetTabs"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".view.TreatmentList"
             android:label="@string/treatments"
             />
-
+        <activity android:name=".view.PetTabs"
+            />
         <activity android:name=".view.SettingsActivity"
             android:label="@string/settings"
             />
