@@ -113,9 +113,9 @@ public class TreatmentItem
         public ViewHolder(View v) {
             super(v);
             this.view = v;
-            txtViewName = (TextView) null;
-            txtViewSpecies = (TextView) null;
-            imgPlace = (RoundedImageView) null;
+            txtViewName = (TextView) v.findViewById(R.id.treatment_name);
+            txtViewSpecies = (TextView) v.findViewById(R.id.treatment_species);
+            imgPlace = (RoundedImageView) v.findViewById(R.id.place_icon);
             v.setOnLongClickListener(this);
         }
 

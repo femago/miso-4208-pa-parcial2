@@ -49,8 +49,7 @@ public class AboutActivity extends AppCompatActivity
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        txtVersion = (AppCompatTextView) null;
-txtVersion.setVisibility(android.view.View.INVISIBLE);
+        txtVersion = (AppCompatTextView) this.findViewById(R.id.version);
         txtVersion.setText(version);
     }
 }

@@ -56,15 +56,15 @@ public class PetList extends AppCompatActivity
         Intent intent;
         switch (item.getItemId()) {
             case R.id.manage_treatments:
-                intent = new Intent(PetList.this,info.frangor.laicare.view.PetList.class);
+                intent = new Intent(PetList.this, TreatmentList.class);
                 startActivity(intent);
                 return true;
             case R.id.preferences:
-                intent = new Intent(PetList.this,info.frangor.laicare.view.AboutActivity.class);
+                intent = new Intent(PetList.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.about:
-                intent = new Intent(PetList.this,info.frangor.laicare.view.SettingsActivity.class);
+                intent = new Intent(PetList.this, AboutActivity.class);
                 startActivity(intent);
                 return true;
             default:

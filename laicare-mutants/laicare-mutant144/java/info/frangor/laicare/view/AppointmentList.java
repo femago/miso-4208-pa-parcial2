@@ -49,8 +49,7 @@ public class AppointmentList extends Fragment {
         final Controller con = (Controller) getActivity()
             .getApplicationContext();
 
-        recyclerView = (RecyclerView) null;
-recyclerView.setVisibility(android.view.View.INVISIBLE);
+        recyclerView = (RecyclerView) v.findViewById(R.id.appointment_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         appointmentAdapter = new AppointmentItem(con, getPetId());
@@ -59,8 +58,8 @@ recyclerView.setVisibility(android.view.View.INVISIBLE);
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),
                     null));
 
-        emptyView = (AppCompatTextView) null;
-emptyView.setVisibility(android.view.View.INVISIBLE);
+        emptyView = (AppCompatTextView) v.findViewById(R.id
+                .empty_appointment_view);
 
         update();
         return v;

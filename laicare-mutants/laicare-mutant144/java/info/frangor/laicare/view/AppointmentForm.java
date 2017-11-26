@@ -88,60 +88,36 @@ public class AppointmentForm extends AppCompatDialogFragment {
                 android.R.layout.simple_spinner_dropdown_item,
                 con.getTreatments(petId));
 
-        apTreatment = (AppCompatSpinner) null;
+        apTreatment = (AppCompatSpinner) view.findViewById(R.id
+                .appointment_treatments);
 
-apTreatment.setVisibility(android.view.View.INVISIBLE);
         apTreatment.setAdapter(treatments);
 
         // Calendar picker
         apDate = (AppCompatEditText) view.findViewById(R.id
-                .appointment_first_danull() {
-apDate.setVisibility(android.view.View.INVISIBLE);
+                .appointment_first_date);
+        apDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showDatePickerDialog(v, apDate);
             }
         });
 
-        
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-apAttended.setVisibility(android.view.View.INVISIBLE);
-e.printStackTrace();
-}
-apAttended = (AppCompatEditText) null;
-
+        apAttended = (AppCompatEditText) view.findViewById(R.id
+                .appointment_attended);
         apAttended.setOnClickListener(new View.OnClickListener() {
-
- try {
-inAttended.setVisibility(android.view.View.INVISIBLE);
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
             @Override
-delete.setVisibility(android.view.View.INVISIBLE);
             public void onClick(View v) {
                 showDatePickerDialog(v, apAttended);
-
             }
         });
 
-cancel.setVisibility(android.view.View.INVISIBLE);
-   
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-     inAttended = (TextInputLayout) view.findViewById(R.id.attended);
-
+        inAttended = (TextInputLayout) view.findViewById(R.id.attended);
 
         // Delete button
-        AppCompatButton delete = (AppCompatButton) null;
+        AppCompatButton delete = (AppCompatButton) view.findViewById(
+                R.id.appointment_form_delete);
         delete.setOnClickListener(new View.OnClickListener() {
-ok.setVisibility(android.view.View.INVISIBLE);
             @Override
             public void onClick(View v) {
                 deleteAppointment(v);
@@ -151,14 +127,7 @@ ok.setVisibility(android.view.View.INVISIBLE);
 
         // Cancel button
         AppCompatButton cancel = (AppCompatButton) view.findViewById(
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-
                 R.id.appointment_form_cancel);
-
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -168,14 +137,7 @@ e.printStackTrace();
 
         // OK button
         AppCompatButton ok = (AppCompatButton) view.findViewById(
-            
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
- R.id.appointment_form_ok);
-
+             R.id.appointment_form_ok);
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

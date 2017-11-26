@@ -59,8 +59,7 @@ public class CheckPointList extends Fragment {
         final Controller con = (Controller) getActivity()
             .getApplicationContext();
 
-        recyclerView = (RecyclerView) null;
-recyclerView.setVisibility(android.view.View.INVISIBLE);
+        recyclerView = (RecyclerView) v.findViewById(R.id.checkpoint_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         checkPointAdapter = new CheckPointItem(con, getPetId());
@@ -70,15 +69,13 @@ recyclerView.setVisibility(android.view.View.INVISIBLE);
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),
                     null));
 
-        emptyView = (AppCompatTextView) null;
-emptyView.setVisibility(android.view.View.INVISIBLE);
+        emptyView = (AppCompatTextView) v.findViewById(R.id
+                .empty_checkpoint_view);
 
-        scrollView = (NestedScrollView) null;
+        scrollView = (NestedScrollView) v.findViewById(R.id.scroll);
 
-scrollView.setVisibility(android.view.View.INVISIBLE);
-        graph = (GraphView) null;
+        graph = (GraphView) v.findViewById(R.id.graph);
 
-graph.setVisibility(android.view.View.INVISIBLE);
         series = new LineGraphSeries<DataPoint>(generateData());
         graph.addSeries(series);
         series.setColor(ContextCompat.getColor(con, R.color.accent));

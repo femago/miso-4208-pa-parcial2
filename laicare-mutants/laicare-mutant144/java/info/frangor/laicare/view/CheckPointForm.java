@@ -76,50 +76,26 @@ public class CheckPointForm extends AppCompatDialogFragment {
 
         int position = getArguments().getInt("position");
 
-        cpGrams = (AppCompatEditText) null;
-cpGrams.setVisibility(android.view.View.INVISIBLE);
+        cpGrams = (AppCompatEditText) view.findViewById(R.id.checkpoint_grams);
 
         // Calendar picker
-        cpDate = (AppCompatEditText) null;
-cpDate.setVisibility(android.view.View.INVISIBLE);
+        cpDate = (AppCompatEditText) view.findViewById(R.id.checkpoint_date);
         cpDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-
-delete.setVisibility(android.view.View.INVISIBLE);
                 showDatePickerDialog(v);
-
             }
         });
 
-
         // Delete button
-        AppCompatButton delete = (AppCompatButton) null;         dele353
- try {
-cancel.setVisibility(android.view.View.INVISIBLE);
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-er() {
+        AppCompatButton delete = (AppCompatButton) view.findViewById(
+                R.id.checkpoint_form_delete);
+        delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 deleteCheckPoint(v);
             }
-  
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-ok.setVisibility(android.view.View.INVISIBLE);
-e.printStackTrace();
-}
-      });
-
+        });
 
 
         // Cancel button
@@ -133,7 +109,8 @@ e.printStackTrace();
         });
 
         // OK button
-        AppCompatButton ok = (AppCompatButton) null;
+        AppCompatButton ok = (AppCompatButton) view.findViewById(
+             R.id.checkpoint_form_ok);
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,17 +119,9 @@ e.printStackTrace();
         });
 
         if (position<0) {
-            getDialog().setTitle(
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-getString(R.string.add_checkpoint));
-
+            getDialog().setTitle(getString(R.string.add_checkpoint));
             DateFormat dateFormat = android.text.format.DateFormat
                 .getDateFormat(getActivity().getApplicationContext());
-
             String date = dateFormat.format(new Date());
             cpDate.setText(date);
             delete.setVisibility(View.GONE);

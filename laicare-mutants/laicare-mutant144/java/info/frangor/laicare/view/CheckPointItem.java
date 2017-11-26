@@ -87,10 +87,8 @@ public class CheckPointItem
         public ViewHolder(View v) {
             super(v);
             this.view = v;
-            txtViewGrams = (TextView) null;
-txtViewGrams.setVisibility(android.view.View.INVISIBLE);
-            txtViewDate = (TextView) null;
-txtViewDate.setVisibility(android.view.View.INVISIBLE);
+            txtViewGrams = (TextView) v.findViewById(R.id.checkpoint_grams);
+            txtViewDate = (TextView) v.findViewById(R.id.checkpoint_date);
             v.setOnLongClickListener(this);
         }
 

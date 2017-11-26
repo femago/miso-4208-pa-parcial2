@@ -141,14 +141,10 @@ public class AppointmentItem
         public ViewHolder(View v) {
             super(v);
             this.view = v;
-            txtViewTreatment = (TextView) null;
-txtViewTreatment.setVisibility(android.view.View.INVISIBLE);
-txtViewDate.setVisibility(android.view.View.INVISIBLE);
-            txtViewDate = (TextView) null;
-imgPlace.setVisibility(android.view.View.INVISIBLE);
-imgInfo.setVisibility(android.view.View.INVISIBLE);
-            imgPlace = (RoundedImageView) null;
-            imgInfo = (ImageView) null;
+            txtViewTreatment = (TextView) v.findViewById(R.id.treatment_name);
+            txtViewDate = (TextView) v.findViewById(R.id.appointment_date);
+            imgPlace = (RoundedImageView) v.findViewById(R.id.place_icon);
+            imgInfo = (ImageView) v.findViewById(R.id.appointment_info);
             v.setOnLongClickListener(this);
             v.setOnClickListener(this);
         }

@@ -77,11 +77,12 @@ public class TreatmentForm extends AppCompatDialogFragment {
 
         int position = getArguments().getInt("position");
 
-        tName = (AppCompatEditText) null;
-        tPeriod = (AppCompatEditText) null;
-        tTerm = (AppCompatEditText) null;
-        tPlace = (AppCompatSpinner) null;
-        tSpecies = (AppCompatSpinner) null;
+        tName = (AppCompatEditText) view.findViewById(R.id.treatment_name);
+        tPeriod = (AppCompatEditText) view.findViewById(R.id.treatment_period);
+        tTerm = (AppCompatEditText) view.findViewById(R.id.treatment_term);
+        tPlace = (AppCompatSpinner) view.findViewById(R.id.treatment_places);
+        tSpecies = (AppCompatSpinner) view.findViewById(R.id
+                .treatment_species);
 
         // Delete button
         AppCompatButton delete = (AppCompatButton) view.findViewById(
@@ -93,12 +94,6 @@ public class TreatmentForm extends AppCompatDialogFragment {
             }
         });
 
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-
 
         // Cancel button
         AppCompatButton cancel = (AppCompatButton) view.findViewById(
@@ -108,25 +103,11 @@ e.printStackTrace();
             public void onClick(View v) {
                 getDialog().cancel();
             }
-        })
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-;
-
+        });
 
         // OK button
         AppCompatButton ok = (AppCompatButton) view.findViewById(
-            R.id.treatment_form
- try {
-Thread.sleep(10000);
-} catch (InterruptedException e) {
-e.printStackTrace();
-}
-_ok);
-
+            R.id.treatment_form_ok);
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

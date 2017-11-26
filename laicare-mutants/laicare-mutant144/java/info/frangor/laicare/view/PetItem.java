@@ -122,9 +122,9 @@ public class PetItem extends RecyclerView.Adapter<PetItem.ViewHolder> {
         public ViewHolder(View v) {
             super(v);
             this.view = v;
-            txtViewName = (TextView) null;
-            txtViewAge = (TextView) null;
-            imgSpecie = (RoundedImageView) null;
+            txtViewName = (TextView) v.findViewById(R.id.pet_name);
+            txtViewAge = (TextView) v.findViewById(R.id.pet_age);
+            imgSpecie = (RoundedImageView) v.findViewById(R.id.pet_icon);
             v.setOnLongClickListener(this);
             v.setOnClickListener(this);
         }
@@ -138,7 +138,7 @@ public class PetItem extends RecyclerView.Adapter<PetItem.ViewHolder> {
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
-            Intent intent = new Intent(con,info.frangor.laicare.view.SettingsActivity.class);
+            Intent intent = new Intent(con, PetTabs.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.putExtra("petId", con.getPet(position).getId());
             intent.putExtra("petName", con.getPet(position).getName());
